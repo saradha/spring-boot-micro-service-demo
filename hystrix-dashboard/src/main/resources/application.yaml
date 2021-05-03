@@ -1,0 +1,12 @@
+server:
+  port: 9250
+
+
+spring:
+  application:
+    name: HYSTRIX-DASHBOARD
+
+#this will allow our hystrix stream which we configured in api gateway(allow all hystrix proxy stream)
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
